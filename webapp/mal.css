@@ -1,9 +1,9 @@
 
 body{
-background-color: #242424;
+background-color: #303030;
 background-repeat: repeat;
 overflow-x:hidden;
-overflow-y:auto;
+overflow-y:hidden;
 font-family: 'Josefin Sans';
 padding:0px;
 margin: 0px;
@@ -18,7 +18,6 @@ text-align: center;
 font-family: 'Dancing Script';
 font-weight: 5px;
 font-size: 40px; 
-text-shadow: 2px 2px #002E4C;
 }
          
 h2{
@@ -29,6 +28,7 @@ font-weight: 5px;
 margin: 0px;
 text-align: center;
 }
+
 #cont {
 margin: 10px auto;
 width: 100%;
@@ -77,23 +77,21 @@ font-size:40px;
 font-weight: 5px;
 margin: 1px auto;
 text-align: center;
-text-shadow: 2px 2px #002E4C;
 }
-#menu:hover { 
-    color: white;
+#menu:focus { 
+    color: #007ACC;
 }
 
 #table {
 border-collapse: separate;
 display: none;
 width: 100%;
+height: 100%;
 position: absolute;
 list-style-type: none;
-background-color: #1D1D1D;
 text-align: center;
 opacity: 0.97;
-margin:-55px auto 0px ;
-height: 170px;
+margin:-80px auto 0px ;
 padding-left: 10px
 }
 
@@ -105,12 +103,11 @@ padding: 10px;
 text-align: center;
 font-size: 25px;
 margin:0px;
-margin-bottom: 2px;
+margin-top: 30px;
 margin-left: -20px;
-width: 300px;
+width: 100%;
+height: 30%;
 border: 1px solid #09f;
-border-top-left-radius:4px;
-border-top-right-radius:4px;
 }
 #home:hover { 
     background-color: white;
@@ -119,17 +116,17 @@ border-top-right-radius:4px;
 }
 
 #feel{
-background-color: #09f;
+background-color: #008AE6;
 color: #fff;
 font-family: 'Josefin Sans';
 padding: 10px;
 text-align: center;
 font-size: 25px;
-margin: 0px;
-margin-bottom: 2px;
+margin:0px;
 margin-left: -20px;
-width: 300px;
-border: 1px solid #09f;
+width: 100%;
+height: 30%;
+border: 1px solid #008AE6;
 }
 #feel:hover { 
     background-color: white;
@@ -137,20 +134,19 @@ border: 1px solid #09f;
     border: 1px solid #fff;
 }
 
+
 #enferm{
-background-color: #09f;
+background-color: #007ACC;
 color: #fff;
 font-family: 'Josefin Sans';
 padding: 10px;
 text-align: center;
 font-size: 25px;
-margin: 0px;
-margin-bottom: 2px;
+margin:0px;
 margin-left: -20px;
-width: 300px;
-border: 1px solid #09f;
-border-bottom-right-radius:4px; 
-border-bottom-left-radius:4px;
+width: 100%;
+height: 30%;
+border: 1px solid #007ACC;
 }
 #enferm:hover { 
     background-color: white;
@@ -159,29 +155,54 @@ border-bottom-left-radius:4px;
 }
 
 .barhead{
-background-color:#1D1D1D ;
-margin-top: -25px; 
+background-color:#252525 ;
+margin-top: -26px; 
 margin-right: -10px;
 padding: 0px;
 width: 100%;
-border-radius: 10px;
 
 
 }
+.barcolor4{
+background-color:#272727 ;
+margin: -27px auto 0px auto; 
+padding: 0px 0px 10px 0px;
+width: 100%;
+display: inline-block;
+height: 6px;
+
+}
+.barcolor5{
+background-color:#292929 ;
+margin: -11px auto; 
+padding: 0px 0px 10px 0px;
+width: 100%;
+display: inline-block;
+height: 6px;
+    
+}
+.barcolor6{
+background-color:#2f2f2f;
+margin: -1px auto; 
+padding: 0px 0px 10px 0px;
+width: 100%;
+display: inline-block;
+height: 6px;
+    
+}
 
 .pain{
-background-color: #242424;
-color: #0099FF ;
+background-color: rgba(0, 0, 0, 0);
+color: #09f ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
 margin-top: 10px;
-border-radius: 10px;
-border: 2px solid #09f;
+border: 1px solid #09f;
 text-align: center;
-
+  border-radius: 2px;
 }
 
 .pain:hover { 
@@ -190,64 +211,57 @@ text-align: center;
 }
 
 .sick{
-background-color: #242424;
-color: #0099FF ;
+background-color: rgba(0, 0, 0, 0);
+color: #09f ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
 margin-top: 10px;
-border-radius: 10px;
-border: 2px solid #09f;
+border: 1px solid #09f;
 text-align: center;
-
+  border-radius: 2px;
 }
 .sick:hover { 
     background-color: #09f;
     color: #242424;
 }
 .molestia{
-background-color: #242424;
-color: #0099FF ;
+background-color: rgba(0, 0, 0, 0);
+color: #09f ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
 margin-top: 10px;
-border-radius: 10px;
-border: 2px solid #09f;
+border: 1px solid #09f;
 text-align: center;
-
+  border-radius: 2px;
 }
 .molestia:hover { 
     background-color: #09f;
     color: #242424;
 }
-.hola{
+.wrap{
 width: 100%;
 margin:1px auto 50px auto;
 margin-top: 10px;
 }
 
 .maincontent{
-border: 2px solid #4A4A4A;
-border-radius: 10px;
-padding: 10px;
-width: 90%;
+width: 100%;
 margin:1px auto;
 
 }
 
 .contcontmenu{
-
 margin:1px auto;
-
+width: 100%;
 }
 .mc{
 margin:10px auto;
-
 }
 ul, menu, dir {
   -webkit-padding-start: 0px;
