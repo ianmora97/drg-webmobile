@@ -30,6 +30,25 @@
       });
     });
   });
+
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("body").each(function() {
+        over = $(this).css("overflow-y");
+        if(over == "hidden") {
+          $(this).fadeOut('slow',function() {
+           $(this).css("overflow-y","auto");
+          });
+        } else {
+          $(this).fadeIn('slow',function() {
+            $(this).css("overflow-y","hidden")
+            ;
+          });
+        }
+      });
+    });
+  });
+
 </script>
 <body>
 	
@@ -58,12 +77,16 @@
 <div id="imagen">
 <img src="images/anatomy_body/cuerpo.png" alt="" usemap="#human" id="human" border="0"/>
 <map name="human" id="human">
-    <area alt="Brazo Derecho" title="Brazo Derecho" href="brazodere.html" shape="poly" coords="195,93,190,146,279,302" />
-    <area alt="Brazo Izquierdo" title="Brazo Izquierdo" href="brazoizq.html" shape="poly" coords="93,90,93,139,4,299,49,169" />
-    <area alt="Chest" title="Tronco" href="chest.html" shape="square" coords="101,89,180,254" />
-    <area alt="Pierna Izquierda" title="Pierna Izquierda" href="piernaizq.html" shape="poly" coords="88,264,138,271,99,529,76,525" />
-    <area alt="Pierna Derecha" title="Pierna Derecha" href="piernader.html" shape="poly" coords="140,269,191,259,205,525,182,530" />
-    <area alt="Head" title="Cabeza" href="Head.html" shape="poly" coords="138,1,120,11,119,41,128,62,153,64,162,34,159,11,151,4" />
+<area alt="Brazo Derecho" title="Brazo Derecho" href="brazodere.html" shape="poly" coords="200,100,185,138,202,170,218,208,242,244,260,286,279,299" />
+<area alt="Brazo Izquierdo" title="Brazo Izquierdo" href="brazoizq.html" shape="poly" coords="78,106,71,126,58,153,18,254,3,300,18,283,32,254,67,195,92,144" />
+<area alt="Chest" title="Tronco" href="chest.html" shape="square" coords="108,99,92,141,99,195,107,201,169,202,180,195,183,123,177,102,139,96" />
+<area alt="Pierna Izquierda" title="Pierna Izquierda" href="piernaizq.html" shape="poly" coords="87,264,140,266,115,362,112,418,93,499,100,528,76,523" />
+<area alt="Pierna Derecha" title="Pierna Derecha" href="piernader.html" shape="poly" coords="144,266,192,265,198,302,193,355,203,421,201,493,204,525,180,531" />
+<area alt="Head" title="Cabeza" href="head.html" shape="poly" coords="140,1,124,5,117,23,118,41,124,57,137,67,151,62,159,51,162,35,162,15,154,4" />
+<area alt="Cuello" title="Cuello" href="neck.html" shape="poly" coords="126,63,121,76,133,80,143,80,151,78,156,75,156,69,155,62,141,68" />
+<area alt="Hombro Izquierdo" title="Hombro izquierdo" href="hombroizq.html" shape="poly" coords="100,87,98,118,75,110,88,91" />
+<area alt="Hombro Derecho" title="Hombro derecho" href="hombrodere.html" shape="poly" coords="178,87,182,125,206,112,197,94" />
+<area alt="Cadera" title="Cadera" href="cadera.html" shape="poly" coords="98,206,182,207,185,252,92,253" />
     </map>
   </div>
 	</div>

@@ -41,33 +41,7 @@ width: 100%;
 display: inline-block;
 height: 75px;
 }
-.barcolor1{
-background-color:#202020 ;
-margin: -1px auto 0px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
 
-}
-.barcolor2{
-background-color:#232323 ;
-margin: -1px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
-    
-}
-.barcolor3{
-background-color:#252525 ;
-margin: -1px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
-    
-}
 #menu{
 background-color:#1D1D1D; 
 color: #0099FF;
@@ -91,7 +65,7 @@ position: absolute;
 list-style-type: none;
 text-align: center;
 opacity: 0.97;
-margin:-80px auto 0px ;
+margin:-35px auto 0px ;
 padding-left: 10px
 }
 
@@ -163,33 +137,7 @@ width: 100%;
 
 
 }
-.barcolor4{
-background-color:#272727 ;
-margin: -27px auto 0px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
 
-}
-.barcolor5{
-background-color:#292929 ;
-margin: -11px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
-    
-}
-.barcolor6{
-background-color:#2f2f2f;
-margin: -1px auto; 
-padding: 0px 0px 10px 0px;
-width: 100%;
-display: inline-block;
-height: 6px;
-    
-}
 
 .pain{
 background-color: rgba(0, 0, 0, 0);
