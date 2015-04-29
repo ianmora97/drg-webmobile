@@ -9,7 +9,8 @@
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="mal.css">
+<link rel="stylesheet" type="text/css" href="front.css">
+<link rel="javascript" type="javascript" href="front.js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <script type="text/JavaScript" language="JavaScript">
@@ -20,49 +21,54 @@
         displaying = $(this).css("display");
         if(displaying == "block") {
           $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
+           $("#table").css("display","none");
           });
         } else {
           $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
+            $("#table").css("display","block");
           });
         }
       });
     });
   });
+
+
 </script>
 <body>
-  
+	
 <div class="navbar" >
 <center>
-    <input id="menu" type="button" value="Dr.g" >
+		<input id="menu" type="button" value="Dr.g" >
 </center>
 </div>
 
 
 <div class="contcontmenu">
-  <div class="mc">
-    <ul id="table">
-      <li ><a href="home.html"><input type="button" id="home" value="Home"></a></li>
-      <li ><a href="index.html"><input type="button" id="feel" value="Feel" ></a></li>
-      <li ><a href="enferm.html"><input type="button" id="enferm" value="Illnesses"></a></li>          
-    </ul>
-  </div>
+	<div class="mc">
+		<ul id="table">
+			<li ><a href="home.html"><input type="button" id="home" value="Home"></a></li>
+			<li ><a href="index.html"><input type="button" id="feel" value="Feel" ></a></li>
+			<li ><a href="enferm.html"><input type="button" id="enferm" value="Illnesses"></a></li>					
+		</ul>
+	</div>
 </div>
 <div class="wrap">
-  <div class="maincontent">
-    <div class="barhead">
-      <h1>What you feel?</h1> 
-    </div> 
+	<div class="maincontent">
+		<div class="barhead">
+			<h1>You feel it?</h1>	
+		</div>
 
+<div id="imagen">
 <center>
   <ul style="list-style-type: none; padding:0px;">  
-    <li><a href="pain.html"><input class="pain" type="button" value="Pain" ></a></li>
-    <li><a href="sick.html"><input class="sick" type="button" value="I feel sick" ></a></li>
-    <li><a href="pain.html"><input class="molestia" type="button" value="Nuisance" ></a></li>  
+      <li><a href="brown.html"><input id="button" type="button" value="Behind browbone" ></a></li>
+      <li><a href="cluster.html"><input id="button" type="button" value="Around eye" ></a></li>
+      <li><a href="tension.html"><input id="button" type="button" value="Band squeezing" ></a></li>
+      <li><a href="nausea.html"><input id="button" type="button" value="Nausea" ></a></li>
   </ul>
 </center>
   </div>
+	</div>
 </div>
 
 

@@ -10,6 +10,7 @@
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="pain.css">
+<link rel="javascript" type="javascript" href="pain.js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <script type="text/JavaScript" language="JavaScript">
@@ -20,11 +21,28 @@
         displaying = $(this).css("display");
         if(displaying == "block") {
           $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
+           $("#table").css("display","none");
           });
         } else {
           $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
+            $("#table").css("display","block");
+          });
+        }
+      });
+    });
+  });
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("body").each(function() {
+        over = $("body").css("overflow-y");
+        if(over == "hidden") {
+          $("#menu").fadeOut('slow',function() {
+           $("body").css("overflow-y","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("body").css("overflow-y","hidden")
+            ;
           });
         }
       });
@@ -33,15 +51,15 @@
 
     $(document).ready(function(){
    $("#menu").click(function () {
-      $("body").each(function() {
-        over = $(this).css("overflow-y");
-        if(over == "hidden") {
-          $(this).fadeOut('slow',function() {
-           $(this).css("overflow-y","auto");
+      $("#menu").each(function() {
+        menu = $("#menu").css("display");
+        if(menu == "auto") {
+          $("#menu").fadeOut('slow',function() {
+           $("#menu").css("display","auto");
           });
         } else {
-          $(this).fadeIn('slow',function() {
-            $(this).css("overflow-y","hidden")
+          $("#menu").fadeIn('slow',function() {
+            $("#menu").css("display","auto")
             ;
           });
         }
@@ -64,14 +82,14 @@
 		<ul id="table">
 			<li ><a href="home.html"><input type="button" id="home" value="Home"></a></li>
 			<li ><a href="index.html"><input type="button" id="feel" value="Feel" ></a></li>
-			<li ><a href="enferm.html"><input type="button" id="enferm" value="Enfermedades"></a></li>					
+			<li ><a href="enferm.html"><input type="button" id="enferm" value="Illnesses"></a></li>					
 		</ul>
 	</div>
 </div>
 <div class="wrap">
 	<div class="maincontent">
 		<div class="barhead">
-			<h1>En que parte?</h1>	
+			<h1>Where?</h1>	
 		</div>
 
 <div id="imagen">
