@@ -48,6 +48,8 @@ font-size:40px;
 font-weight: 5px;
 margin: 1px auto;
 text-align: center;
+outline-style: none;
+-webkit-appearance:none;
 }
 #menu:focus { 
     color: #007ACC;
@@ -79,6 +81,8 @@ margin-left: -20px;
 width: 100%;
 height: 30%;
 border: 1px solid #09f;
+outline-style: none;
+-webkit-appearance:none;
 }
 #home:hover { 
     background-color: white;
@@ -98,6 +102,8 @@ margin-left: -20px;
 width: 100%;
 height: 30%;
 border: 1px solid #008AE6;
+outline-style: none;
+-webkit-appearance:none;
 }
 #feel:hover { 
     background-color: white;
@@ -118,6 +124,8 @@ margin-left: -20px;
 width: 100%;
 height: 30%;
 border: 1px solid #007ACC;
+outline-style: none;
+-webkit-appearance:none;
 }
 #enferm:hover { 
     background-color: white;
