@@ -31,10 +31,45 @@
       });
     });
   });
+     $(document).ready(function(){
+   $("#menu").click(function () {
+      $("body").each(function() {
+        over = $("body").css("overflow-y");
+        if(over == "hidden") {
+          $("#menu").fadeOut('slow',function() {
+           $("body").css("overflow-y","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("body").css("overflow-y","hidden")
+            ;
+          });
+        }
+      });
+    });
+  });
+
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("#menu").each(function() {
+        menu = $("#menu").css("display");
+        if(menu == "auto") {
+          $("#menu").fadeOut('slow',function() {
+           $("#menu").css("display","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("#menu").css("display","auto")
+            ;
+          });
+        }
+      });
+    });
+  });
 
 $(document).ready(function(){
     $(".causas").click(function(){
-        $(".pcausas").toggle('slow');
+        $(".pcausas").slideToggle('slow');
     });
 });
 $(document).ready(function(){
@@ -44,10 +79,22 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $(".tratamiento").click(function(){
-        $(".ptreat").toggle('slow');
+        $(".ptreat").slideToggle('slow');
     });
 });
 
+
+$(document).ready( function() {
+  $(".causas").click(function () { 
+     $('html, body').animate({ scrollTop: $(".causas").offset().top}, 1000);
+  });
+});
+
+$(document).ready( function() {
+  $(".tratamiento").click(function () { 
+     $('html, body').animate({ scrollTop: $(".tratamiento").offset().top}, 1000);
+  });
+});
 </script>
 
 <body>

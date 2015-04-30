@@ -19,6 +19,7 @@ text-align: center;
 font-family: 'Dancing Script';
 font-weight: 5px;
 font-size: 40px; 
+margin:10px;
 }
          
 h2{
@@ -30,9 +31,18 @@ margin: 0px;
 text-align: center;
 }
 h3{
+color:#0099FF;
+padding:7px;
+text-align: center;
+font-family: 'Dancing Script';
+font-weight: 5px;
+font-size: 35px; 
+margin: 0px;
+}
+h4{
 color: #09f;
 font-family: 'Poiret One';
-font-size:25px;
+font-size:30px;
 font-weight: 5px;
 margin: 0px;
 text-align: center;
@@ -141,57 +151,81 @@ border: 1px solid #007ACC;
 }
 
 .barhead{
-background-color:#252525 ;
-margin-top: -26px; 
+background-color:#1D1D1D ;
+margin-top:-10px; 
 margin-right: -10px;
 padding: 0px;
 width: 100%;
-
-
+-webkit-border-radius:5px;
 }
-
-
-#desayuno{
-width:25px;
-height:25px;
-background-color:#1D1D1D;
-border-radius: 4px;
-border:2px solid #1D1D1D;
-margin-top: 10px;
-margin-bottom: 10px;
-}
-#almuerzo{
-width:25px;
-height:25px;
-background-color:#1D1D1D;
-border-radius: 4px;
-border:2px solid #1D1D1D; 
-margin-top: 10px;
-margin-bottom: 10px;
-}
-#cena{
-width:25px;
-height:25px;
-background-color:#1D1D1D;
-border-radius: 4px;
-border:2px solid #1D1D1D;
-margin-top: 10px;
-margin-bottom: 10px;
+.subwrap{
+    border-top:2px solid #4A4A4A;
+    padding-top:15px; 
 }
 .sub{
-background-color: #1D1D1D;
-border-radius: 10px;
+    -webkit-appearance:none;
+background-color: rgba(0, 0, 0, 0);
 font-size: 40px;
 font-weight: 10px;
 padding: 10px;
 font-family:'Poiret One';
-color:#0099FF;
-border:2px solid #1D1D1D;
+color:#fff;
+border:2px solid #0099FF;
+border-radius: 5px;
+margin-left: -50px;
+width: 144;
+outline-style: none;
 }
 .sub:hover{
+    -webkit-appearance:none;
 background-color: #0099FF;
 color:#1D1D1D;
 border:2px solid #0099FF;
+}
+
+#meals{
+-webkit-appearance:none;
+background-color: rgba(0, 0, 0, 0);
+color: #09f ;
+font-family:'Josefin Sans';
+font-size: 30px;
+padding: 5px;
+height: 60px;
+width: 260px;
+margin-top: 5px;
+margin-bottom: 10px;
+border: 1px solid #09f;
+text-align: center;
+outline-style: none;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance:none;
+    width:25px;
+    height:25px;
+    background-color:#1D1D1D;
+    border-radius: 4px;
+    border:2px solid #1D1D1D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline-style: none;
+    margin-left: 20px;
+}
+
+input:checked[type="checkbox"]{
+    background-color: #303030;
+ 
+}
+form li{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.mainbar{
+background-color:#252525 ;
+margin-top: -9px; 
+margin-right: -10px;
+padding: 0px;
+width: 100%;
 }
 .barhead1{
 background-color:#1D1D1D ;
@@ -205,7 +239,7 @@ border-radius: 10px;
 }
 .hola1{
 width: 100%;
-margin:1px auto 50px auto;
+margin:1px auto 20px auto;
 margin-top: 10px;
 }
 
@@ -215,18 +249,21 @@ border-radius: 10px;
 padding: 10px;
 width: 90%;
 margin:1px auto;
-
+padding-top: 25px;
 }
 .wrap{
+    display: none;
 width: 100%;
-margin:1px auto 50px auto;
+margin:1px auto 20px auto;
 margin-top: 10px;
 }
 
 .maincontent{
-width: 100%;
+border: 2px solid #4A4A4A;
+border-radius: 10px;
+padding: 10px;
+width: 90%;
 margin:1px auto;
-
 }
 
 .contcontmenu{
@@ -235,6 +272,12 @@ width: 100%;
 }
 .mc{
 margin:10px auto;
+}
+.wrap1{
+    display: none;
+width: 100%;
+margin:1px auto 50px auto;
+margin-top: 10px;
 }
 ul, menu, dir {
   -webkit-padding-start: 0px;

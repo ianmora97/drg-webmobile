@@ -30,12 +30,59 @@
       });
     });
   });
+    $(document).ready(function(){
+    $("#meals").click(function(){
+        $(".wrap").slideToggle(1000);
+    });
+});
+      $(document).ready(function(){
+   $("#menu").click(function () {
+      $("body").each(function() {
+        over = $("body").css("overflow-y");
+        if(over == "hidden") {
+          $("#menu").fadeOut('slow',function() {
+           $("body").css("overflow-y","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("body").css("overflow-y","hidden")
+            ;
+          });
+        }
+      });
+    });
+  });
+
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("#menu").each(function() {
+        menu = $("#menu").css("display");
+        if(menu == "auto") {
+          $("#menu").fadeOut('slow',function() {
+           $("#menu").css("display","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("#menu").css("display","auto")
+            ;
+          });
+        }
+      });
+    });
+  });
+
+
+$(document).ready( function() {
+  $("#meals").click(function () { 
+     $('html, body').animate({ scrollTop: $("#meals").offset().top}, 1000);
+  });
+});
 </script>
 <body>
   
 <div class="navbar" >
 <center>
-    <input id="menu" type="button" value="Dr.g" >
+    <div id="menu">Dr.g</div>
 </center>
 </div>
 
@@ -49,30 +96,34 @@
     </ul>
   </div>
 </div>
-<div class="wrap">
-  <div class="maincontent">
-    <div class="barhead">
-      <h1>What did you made?</h1>
-    </div>
-
-<center>
-  <ul style="list-style-type: none; padding:0px;" >  
-    <form>
-      <li><h3>Breakfast</h3><input type="checkbox" id="desayuno" ></li>
-      <li><h3>Lunch</h3><input type="checkbox" id="almuerzo" ></li>
-      <li><h3>Dinner</h3><input type="checkbox" id="cena" ></li>
-      <input type="submit" class="sub">
-    </form>
-  </ul>
-</center>
-</div>
+<div class="mainbar"><h3>Hi! How are you today?</h3></div>
 <div class="hola1">
   <div class="maincontent1">
     <div class="barhead1">
       <h1>Yo</h1>
     </div> 
-Una animacion de la persona que se meta, un perfil
+<!--Una animacion de la persona que se meta, un perfil-->
 </div>
+</div>
+<center>
+  <input type="button" id="meals" value="Record your meals">
+</center>
+<div class="wrap">
+  <div class="maincontent">
+    <div class="barhead">
+      <h1>Your meals</h1>
+    </div>
+
+<center>
+  <ul style="list-style-type: none; padding:0px;  display: table-caption;margin: 10px auto;" >  
+    <form>
+      <li><label for="desayuno"><h4>Breakfast</h4></label><input type="checkbox" id="desayuno" ></li>
+      <li><label for="almuerzo"><h4>Lunch</h4></label><input type="checkbox" id="almuerzo" ></li>
+      <li><label for="cena"><h4>Dinner</h4></label><input type="checkbox" id="cena" ></li>
+      <div class="subwrap"><input type="submit" class="sub"></div>
+    </form>
+  </ul>
+</center>
 </div>
 </body>
 </html>
