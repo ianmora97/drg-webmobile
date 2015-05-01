@@ -3,7 +3,7 @@ body{
 background-color: #303030;
 background-repeat: repeat;
 overflow-x:hidden;
-overflow-y:hidden;
+overflow-y:auto;
 font-family: 'Josefin Sans';
 padding:0px;
 margin: 0px;
@@ -18,6 +18,7 @@ text-align: center;
 font-family: 'Dancing Script';
 font-weight: 5px;
 font-size: 40px; 
+margin-bottom: 5px;
 }
 	     
 h2{
@@ -27,6 +28,18 @@ font-size:50px;
 font-weight: 5px;
 margin: 0px;
 text-align: center;
+}
+h3{
+color: #B85C00;
+font-family: 'Pacifico';
+font-size:30px;
+font-weight: 5px;
+margin: 0px;
+text-align: center;
+}
+input[type="button"]{
+  -webkit-appearance:none;
+  outline-style: none;
 }
 #cont {
 margin: 10px auto;
@@ -50,9 +63,8 @@ font-size:40px;
 font-weight: 5px;
 margin: 1px auto;
 text-align: center;
-  width: 110px;
-  height: 80px;
-  outline-style: none;
+height: 80px;
+outline-style: none;
 -webkit-appearance:none;
 }
 #menu:focus { 
@@ -143,8 +155,6 @@ margin-top: -26px;
 margin-right: -10px;
 padding: 0px;
 width: 100%;
-
-
 }
 
 .mal{
@@ -155,49 +165,35 @@ font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
-margin-top: 10px;
+margin-top: -20px;
 border: 1px solid #09f;
 text-align: center;
 outline-style: none;
 -webkit-appearance:none;
+margin-bottom: 35px;
 }
 .mal:hover { 
     background-color: #09f;
     color:#303030;
-    font-family:'Josefin Sans';
-font-size: 30px;
-padding: 5px;
-height: 60px;
-width: 260px;
-margin-top: 10px;
-border: 1px solid #09f;
-text-align: center;
 }
-.bien{
+
+.aid{
 background-color: rgba(0, 0, 0, 0);
-color: #09f ;
+color: #B85C00 ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
-margin-top: 10px;
-border: 1px solid #09f;
+margin-top: -20px;
+border: 1px solid #B85C00;
 text-align: center;
 outline-style: none;
 -webkit-appearance:none;
 }
-.bien:hover { 
-    background-color: #09f;
-    color:#303030;
-    font-family:'Josefin Sans';
-font-size: 30px;
-padding: 5px;
-height: 60px;
-width: 260px;
-margin-top: 10px;
-border: 1px solid #09f;
-text-align: center;
+.aid:hover { 
+    background-color: rgba(0, 0, 0, 0);
+    color:#B85C00;
 }
 .wrap{
 width: 100%;
@@ -210,6 +206,44 @@ width: 100%;
 margin:1px auto;
 
 }
+.barhead1{
+background-color:#252525 ;
+padding: 5px;
+-webkit-border-radius:5px;
+margin-bottom: 5px;
+}
+.wrap1{
+display: none;
+width: 100%;
+margin:1px auto 50px auto;
+margin-top: 10px;
+}
+.maincontent1{
+    border: 2px solid #4A4A4A;
+border-radius: 10px;
+padding: 10px;
+width: 90%;
+margin:1px auto;
+}
+
+#but{
+background-color: rgba(0, 0, 0, 0);
+color: #B85C00 ;
+font-family:'Josefin Sans';
+font-size: 30px;
+padding: 5px;
+height: 40px;
+width: 260px;
+margin-top: 10px;
+text-align: center;
+outline-style: none;
+-webkit-appearance:none;
+margin:10px auto;
+border:1px solid #B85C00;
+}
+#but:hover { 
+    background-color: rgba(0,0,0,0);
+    color:#B85C00;
 
 .contcontmenu{
 margin:1px auto;

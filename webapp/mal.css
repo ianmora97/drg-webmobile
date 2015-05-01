@@ -28,7 +28,10 @@ font-weight: 5px;
 margin: 0px;
 text-align: center;
 }
-
+input[type="button"]{
+  -webkit-appearance:none;
+  outline-style: none;
+}
 #cont {
 margin: 10px auto;
 width: 100%;

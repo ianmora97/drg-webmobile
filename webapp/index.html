@@ -13,26 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Index</title>
 </head>
-<script type="text/JavaScript" language="JavaScript">
-
-    $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#table").each(function() {
-        displaying = $(this).css("display");
-        if(displaying == "block") {
-          $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
-          });
-        } else {
-          $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
-          });
-        }
-      });
-    });
-  });
-
-
+<script type="text/JavaScript" language="JavaScript" src="index.js">
 </script>
 <body>
 	
@@ -55,18 +36,26 @@
 <div class="wrap">
 	<div class="maincontent">
 		<div class="barhead">
-			<h1>How you feel?</h1>	
+			<h1>Hi! <code style="font-size:20px; color:white;">"var name_user ="</code></h1>	
 		</div>	
-
-<center>
-	<ul style="list-style-type: none; padding:0px;">	
-			<li><a href="mal.html"><input class="mal" type="button" value="Bad" ></a></li>
-			<li><a href="home.html"><input class="bien" type="button" value="Fine" ></a></li>
-	</ul>
-</center>
 	</div>
 </div>
-
-
+<center>
+	<a href="mal.html"><input type="button" class="mal" value="Do you feel bad?"></a>
+</center>
+<center>
+	<input type="button" class="aid" value="First AID">
+</center>
+<div class="wrap1">
+	<div class="maincontent1">
+		<div class="barhead1">
+			<h3>What happen?</h3>
+		</div>
+		<div id="but">Burn</div>
+		<div id="but">Injury</div>
+		<div id="but">Intoxication</div>
+		<div id="but">Cut in the skin</div>
+	</div>
+</div>
 </body>
 </html>
