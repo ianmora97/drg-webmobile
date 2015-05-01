@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Sinusitis</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="tension.css">
+<link rel="javascript" type="javascript" href="brown.js">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script type="text/JavaScript" language="JavaScript">
+
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("#table").each(function() {
+        displaying = $(this).css("display");
+        if(displaying == "block") {
+          $(this).fadeOut('slow',function() {
+           $("#table").css("display","none");
+          });
+        } else {
+          $(this).fadeIn('slow',function() {
+            $("#table").css("display","block");
+          });
+        }
+      });
+    });
+  });
+     $(document).ready(function(){
+   $("#menu").click(function () {
+      $("body").each(function() {
+        over = $("body").css("overflow-y");
+        if(over == "hidden") {
+          $("#menu").fadeOut('slow',function() {
+           $("body").css("overflow-y","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("body").css("overflow-y","hidden")
+            ;
+          });
+        }
+      });
+    });
+  });
+
+    $(document).ready(function(){
+   $("#menu").click(function () {
+      $("#menu").each(function() {
+        menu = $("#menu").css("display");
+        if(menu == "auto") {
+          $("#menu").fadeOut('slow',function() {
+           $("#menu").css("display","auto");
+          });
+        } else {
+          $("#menu").fadeIn('slow',function() {
+            $("#menu").css("display","auto")
+            ;
+          });
+        }
+      });
+    });
+  });
+
+$(document).ready(function(){
+    $(".causas").click(function(){
+        $(".pcausas").slideToggle('slow');
+    });
+});
+$(document).ready(function(){
+    $(".causas").click(function(){
+        $("body").scroll('slow'); 
+    });
+});
+$(document).ready(function(){
+    $(".tratamiento").click(function(){
+        $(".ptreat").slideToggle('slow');
+    });
+});
+
+
+$(document).ready( function() {
+  $(".causas").click(function () { 
+     $('html, body').animate({ scrollTop: $(".causas").offset().top}, 1000);
+  });
+});
+
+$(document).ready( function() {
+  $(".tratamiento").click(function () { 
+     $('html, body').animate({ scrollTop: $(".tratamiento").offset().top}, 1000);
+  });
+});
+</script>
+
+<body>
+	
+<div class="navbar" >
+<center>
+		<input id="menu" type="button" value="Dr.g" >
+</center>
+</div>
+
+
+<div class="contcontmenu">
+	<div class="mc">
+		<ul id="table">
+			<li ><a href="home.html"><input type="button" id="home" value="Home"></a></li>
+			<li ><a href="index.html"><input type="button" id="feel" value="Feel" ></a></li>
+			<li ><a href="enferm.html"><input type="button" id="enferm" value="Illnesses"></a></li>					
+		</ul>
+	</div>
+</div>
+<div class="wrap">
+	<div class="maincontent">
+		<div class="barhead">
+			<h1>According Dr.g...</h1>	
+		</div>
+
+<div id="imagen">
+<h2>Tension Headache</h2>
+<p class="firstp">A tension headache is the most common type of headache. It is pain or discomfort in the head, scalp, or neck, and is usually associated with muscle tightness in these areas.</p>
+
+<div class="causas" onclick="scrollWin()"><h2>Causes</h2></div>
+<p class="pcausas">
+Alcohol use<br><br>
+Caffeine (too much or withdrawal)<br><br>
+Colds, the flu, or a sinus infection<br><br>
+Dental problems such as jaw clenching or teeth grinding<br><br>
+Eye strain<br><br>
+Excessive smoking<br><br>
+Fatigue or overexertion </p>
+<div class="tratamiento"><h2>Treatment</h2></div>
+<p class="ptreat">Keeping a headache diary to help you identify your headache triggers so that you and your doctor can make changes in your lifestyle to reduce the number of headaches you get.<br><br>
+Learning what to do to relieve a headache when it starts<br><br>
+Learning how to take your headache medicines the correct way<br><br>
+Over-the-counter pain medicines such as aspirin, ibuprofen, or acetaminophen<br><br>
+Narcotic pain relievers<br><br>
+Muscle relaxants</p>
+  </div>
+	</div>
+</div>
+
+
+</body>
+</html>
