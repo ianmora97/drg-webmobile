@@ -10,74 +10,10 @@
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="home.css">
+<link rel="javascript" type="text/javascript" href="home.js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<script type="text/JavaScript" language="JavaScript">
-
-    $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#table").each(function() {
-        displaying = $(this).css("display");
-        if(displaying == "block") {
-          $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
-          });
-        } else {
-          $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
-          });
-        }
-      });
-    });
-  });
-    $(document).ready(function(){
-    $("#meals").click(function(){
-        $(".wrap").slideToggle(1000);
-    });
-});
-      $(document).ready(function(){
-   $("#menu").click(function () {
-      $("body").each(function() {
-        over = $("body").css("overflow-y");
-        if(over == "hidden") {
-          $("#menu").fadeOut('slow',function() {
-           $("body").css("overflow-y","auto");
-          });
-        } else {
-          $("#menu").fadeIn('slow',function() {
-            $("body").css("overflow-y","hidden")
-            ;
-          });
-        }
-      });
-    });
-  });
-
-    $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#menu").each(function() {
-        menu = $("#menu").css("display");
-        if(menu == "auto") {
-          $("#menu").fadeOut('slow',function() {
-           $("#menu").css("display","auto");
-          });
-        } else {
-          $("#menu").fadeIn('slow',function() {
-            $("#menu").css("display","auto")
-            ;
-          });
-        }
-      });
-    });
-  });
-
-
-$(document).ready( function() {
-  $("#meals").click(function () { 
-     $('html, body').animate({ scrollTop: $("#meals").offset().top}, 1000);
-  });
-});
-</script>
+<script src="home.js"></script>
 <body>
   
 <div class="navbar" >
@@ -100,9 +36,9 @@ $(document).ready( function() {
 <div class="hola1">
   <div class="maincontent1">
     <div class="barhead1">
-      <h1>Yo</h1>
+      Me
     </div> 
-<!--Una animacion de la persona que se meta, un perfil-->
+Una animacion de la persona que se meta, un perfil
 </div>
 </div>
 <center>
@@ -118,12 +54,38 @@ $(document).ready( function() {
   <ul style="list-style-type: none; padding:0px;  display: table-caption;margin: 10px auto;" >  
     <form>
       <li><label for="desayuno"><h4>Breakfast</h4></label><input type="checkbox" id="desayuno" ></li>
+      <li><label for="mid"><h4>Mid</h4></label><input type="checkbox" id="mid" ></li>
       <li><label for="almuerzo"><h4>Lunch</h4></label><input type="checkbox" id="almuerzo" ></li>
+      <li><label for="coffe"><h4>Coffe</h4></label><input type="checkbox" id="coffe" ></li>
       <li><label for="cena"><h4>Dinner</h4></label><input type="checkbox" id="cena" ></li>
       <div class="subwrap"><input type="submit" class="sub"></div>
     </form>
   </ul>
 </center>
+</div>
+</div>
+<center>
+  <input type="button" value="Your diet" id="diet">
+</center>
+<div class="wrapdiet">
+  <div class="maincontentdiet">
+    <div class="barhead_diet">
+      <h1>Your diet</h1>
+    </div>
+    <h5>This is your diet</h5>
+    <p class="pincrease">Increase weight</p>
+    <p class="p1">Your diet to increase weight takes:<br></p>
+    <div id="breakfast"><h6>Breakfast</h6></div>
+      <p class="break">Calories: 1000<br>Proteines: 2000<br>Liquids: 500ml of water</p>
+    <div id="mid1"><h6>Mid</h6></div>
+      <p class="mid">Calories: 1000<br>Proteines: 2000<br>Liquids: 500ml of water</p>
+    <div id="lunch1"><h6>Lunch</h6></div>
+      <p class="lunch">Calories: 1000<br>Proteines: 2000<br>Liquids: 500ml of water</p>
+   <div id="coffe1"><h6>Coffe</h6></div>
+      <p class="coffe">Calories: 1000<br>Proteines: 2000<br>Liquids: 500ml of water</p>
+   <div id="dinner1"><h6>Dinner</h6></div>
+      <p class="dinner">Calories: 1000<br>Proteines: 2000<br>Liquids: 500ml of water</p>
+  </div>
 </div>
 </body>
 </html>
