@@ -14,23 +14,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <script type="text/JavaScript" language="JavaScript">
-
-    $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#table").each(function() {
-        displaying = $(this).css("display");
-        if(displaying == "block") {
-          $(this).fadeOut('slow',function() {
-           $("#table").css("display","none");
-          });
-        } else {
-          $(this).fadeIn('slow',function() {
-            $("#table").css("display","block");
-          });
-        }
-      });
+$(document).ready(function(){
+    $("#menu").click(function(){
+        $("#table").fadeToggle('slow');
     });
-  });
+});
     $(document).ready(function(){
    $("#menu").click(function () {
       $("body").each(function() {

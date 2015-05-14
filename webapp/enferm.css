@@ -1,6 +1,6 @@
 
 body{
-background-color: #303030;
+background-color: #fff;
 background-repeat: repeat;
 overflow-x:hidden;
 overflow-y:auto;
@@ -13,7 +13,7 @@ color:#fff;
 }
 
  h1 {
-color:#0099FF;
+color:#fff;
 padding:7px;
 text-align: center;
 font-family: 'Dancing Script';
@@ -50,7 +50,7 @@ margin: 10px auto;
 width: 100%;
 }
 .navbar{
-background-color:#1D1D1D ;
+background-color:#09f ;
 margin: -1px auto; 
 padding: 0px 0px 10px 0px;
 width: 100%;
@@ -59,9 +59,9 @@ height: 75px;
 }
 
 #menu{
-background-color:#1D1D1D; 
-color: #0099FF;
-border: 1px solid #1D1D1D;
+background-color:#09f; 
+color: #fff;
+border: 1px solid #09f;
 font-family: 'Pacifico';
 font-size:40px;
 font-weight: 5px;
@@ -70,10 +70,6 @@ text-align: center;
 outline-style: none;
 -webkit-appearance:none;
 }
-#menu:focus { 
-    color: #007ACC;
-}
-
 #table {
 border-collapse: separate;
 display: none;
@@ -83,7 +79,7 @@ position: absolute;
 list-style-type: none;
 text-align: center;
 opacity: 0.97;
-margin:-35px auto 0px ;
+margin:-40px auto 0px ;
 padding-left: 10px
 }
 
@@ -154,7 +150,7 @@ outline-style: none;
 }
 
 .barhead{
-background-color:#252525 ;
+background-color:#006BB3 ;
 margin-top: -37px; 
 margin-right: -10px;
 padding: 0px;

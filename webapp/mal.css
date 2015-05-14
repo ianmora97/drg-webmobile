@@ -1,6 +1,6 @@
 
 body{
-background-color: #303030;
+background-color: #fff;
 background-repeat: repeat;
 overflow-x:hidden;
 overflow-y:hidden;
@@ -12,7 +12,7 @@ width:100%;
 }
 
  h1 {
-color:#0099FF;
+color:#fff;
 padding:7px;
 text-align: center;
 font-family: 'Dancing Script';
@@ -37,7 +37,7 @@ margin: 10px auto;
 width: 100%;
 }
 .navbar{
-background-color:#1D1D1D ;
+background-color:#0099FF ;
 margin: -1px auto; 
 padding: 0px 0px 10px 0px;
 width: 100%;
@@ -46,9 +46,9 @@ height: 75px;
 }
 
 #menu{
-background-color:#1D1D1D; 
-color: #0099FF;
-border: 1px solid #1D1D1D;
+background-color:#0099FF; 
+color: #fff;
+border: 1px solid #0099FF;
 font-family: 'Pacifico';
 font-size:40px;
 font-weight: 5px;
@@ -56,9 +56,6 @@ margin: 1px auto;
 text-align: center;
 outline-style: none;
 -webkit-appearance:none;
-}
-#menu:focus { 
-    color: #007ACC;
 }
 
 #table {
@@ -70,7 +67,7 @@ position: absolute;
 list-style-type: none;
 text-align: center;
 opacity: 0.97;
-margin:-35px auto 0px ;
+margin:-39px auto 0px ;
 padding-left: 10px
 }
 
@@ -140,16 +137,13 @@ outline-style: none;
 }
 
 .barhead{
-background-color:#252525 ;
+background-color:#006BB3 ;
 margin-top: -26px; 
 margin-right: -10px;
 padding: 0px;
 width: 100%;
 
-
 }
-
-
 .pain{
 background-color: rgba(0, 0, 0, 0);
 color: #09f ;
@@ -168,7 +162,7 @@ text-align: center;
 
 .pain:hover { 
     background-color: #09f;
-    color: #242424;
+    color: #fff;
 }
 
 .sick{
@@ -188,7 +182,7 @@ text-align: center;
 }
 .sick:hover { 
     background-color: #09f;
-    color: #242424;
+    color: #fff;
 }
 .molestia{
 background-color: rgba(0, 0, 0, 0);
@@ -207,7 +201,7 @@ text-align: center;
 }
 .molestia:hover { 
     background-color: #09f;
-    color: #242424;
+    color: #fff;
 }
 .wrap{
 width: 100%;

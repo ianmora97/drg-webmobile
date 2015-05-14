@@ -1,6 +1,6 @@
 
 body{
-background-color: #303030;
+background-color: #fff;
 background-repeat: repeat;
 overflow-x:hidden;
 overflow-y:auto;
@@ -12,7 +12,7 @@ width:100%;
 }
 
  h1 {
-color:#0099FF;
+color:#fff;
 padding:7px;
 text-align: center;
 font-family: 'Dancing Script';
@@ -30,7 +30,7 @@ margin: 0px;
 text-align: center;
 }
 h3{
-color: #B85C00;
+color: #fff;
 font-family: 'Pacifico';
 font-size:30px;
 font-weight: 5px;
@@ -46,7 +46,7 @@ margin: 10px auto;
 width: 100%;
 }
 .navbar{
-background-color:#1D1D1D ;
+background-color:#0099FF ;
 margin: -1px auto; 
 padding: 0px 0px 10px 0px;
 width: 100%;
@@ -55,9 +55,9 @@ height: 75px;
 }
 
 #menu{
-background-color:#1D1D1D; 
-color: #0099FF;
-border: 1px solid #1D1D1D;
+background-color:#0099FF; 
+color: #fff;
+border: 1px solid #0099FF;
 font-family: 'Pacifico';
 font-size:40px;
 font-weight: 5px;
@@ -68,7 +68,6 @@ outline-style: none;
 -webkit-appearance:none;
 }
 #menu:focus { 
-    color: #007ACC;
 }
 
 #table {
@@ -150,7 +149,7 @@ outline-style: none;
 }
 
 .barhead{
-background-color:#252525 ;
+background-color:#006BB3 ;
 margin-top: -26px; 
 margin-right: -10px;
 padding: 0px;
@@ -173,27 +172,25 @@ outline-style: none;
 margin-bottom: 35px;
 }
 .mal:hover { 
-    background-color: #09f;
-    color:#303030;
+
 }
 
 .aid{
 background-color: rgba(0, 0, 0, 0);
-color: #B85C00 ;
+color: orange ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
 height: 60px;
 width: 260px;
 margin-top: -20px;
-border: 1px solid #B85C00;
+border: 1px solid orange;
 text-align: center;
 outline-style: none;
 -webkit-appearance:none;
 }
 .aid:hover { 
-    background-color: rgba(0, 0, 0, 0);
-    color:#B85C00;
+
 }
 .wrap{
 width: 100%;
@@ -207,7 +204,7 @@ margin:1px auto;
 
 }
 .barhead1{
-background-color:#252525 ;
+background-color:orange ;
 padding: 5px;
 -webkit-border-radius:5px;
 margin-bottom: 5px;
@@ -219,7 +216,7 @@ margin:1px auto 50px auto;
 margin-top: 10px;
 }
 .maincontent1{
-    border: 2px solid #4A4A4A;
+border: 1px solid orange;
 border-radius: 10px;
 padding: 10px;
 width: 90%;
@@ -228,7 +225,7 @@ margin:1px auto;
 
 #but{
 background-color: rgba(0, 0, 0, 0);
-color: #B85C00 ;
+color: orange ;
 font-family:'Josefin Sans';
 font-size: 30px;
 padding: 5px;
@@ -239,7 +236,7 @@ text-align: center;
 outline-style: none;
 -webkit-appearance:none;
 margin:10px auto;
-border:1px solid #B85C00;
+border:1px solid orange;
 }
 #but:hover { 
     background-color: rgba(0,0,0,0);

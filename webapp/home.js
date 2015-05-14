@@ -1,22 +1,6 @@
-   $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#table").each(function() {
-        displaying = $(this).css("display");
-        if(displaying == "block") {
-          $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
-          });
-        } else {
-          $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
-          });
-        }
-      });
-    });
-  });
-    $(document).ready(function(){
-    $("#meals").click(function(){
-        $(".wrap").slideToggle('slow');
+$(document).ready(function(){
+    $("#menu").click(function(){
+        $("#table").fadeToggle('slow');
     });
 });
       $(document).ready(function(){
@@ -53,7 +37,11 @@
       });
     });
   });
-
+    $(document).ready(function(){
+    $("#meals").click(function(){
+        $(".wrap").slideToggle('slow');
+    });
+});
 $(document).ready( function() {
   $("#meals").click(function () { 
      $('html, body').animate({ scrollTop: $("#meals").offset().top}, 1000);
