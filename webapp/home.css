@@ -84,7 +84,7 @@ input[type="checkbox"]{
     margin-top: 10px;
     margin-bottom: 10px;
     outline-style: none;
-    margin-left: 12px;
+    margin-left: 5px;
 }
 
 input:checked[type="checkbox"]{
