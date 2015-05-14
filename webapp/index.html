@@ -1,13 +1,13 @@
 <html>
 <head>
 
-<script src="/lib/parse-1.2.12.js"></script>
+<<script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
 <script type="text/javascript">Parse.initialize("mE3kfz9lw5Fp4EHYV2ZIvEZakYnohxzHBji8Oy74", "1SUySuhVuwGFYVoBs79rnflDOpkVrZpiCtp3QFSv");
 var TestObject = Parse.Object.extend("TestObject");
 var testObject = new TestObject();
 testObject.save({foo: "bar"}).then(function(object) {
-  var msgbox = Windows.UI.Popups.MessageDialog("yay! it worked");
-  return msgbox.showAsync();
+  alert("yay! it worked");
 });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -66,5 +66,6 @@ testObject.save({foo: "bar"}).then(function(object) {
 		<div id="but">Cut in the skin</div>
 	</div>
 </div>
+<div class="TestObject">asfknaskfnask;fnasfnk</div>
 </body>
 </html>
