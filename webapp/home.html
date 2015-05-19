@@ -14,22 +14,27 @@
 </head>
 <script src="home.js"></script>
 <body>
-  
+  <div class="outer-menu">
+  <input class="checkbox-toggle" type="checkbox" style="margin-top:-40;"/>
+  <div class="hamburger" style="margin-top:-40;">
+    <div></div>
+  </div>
+  <div class="menu1">
+    <div>
+      <div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Feel</a></li>
+          <li><a href="enferm.html">Illnesses</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="navbar" >
 <center>
     <div id="menu">Dr.g</div>
 </center>
-</div>
-
-
-<div class="contcontmenu">
-  <div class="mc">
-    <ul id="table">
-      <li ><a href="home.html"><input type="button" id="home" value="Home"></a></li>
-      <li ><a href="index.html"><input type="button" id="feel" value="Feel" ></a></li>
-      <li ><a href="enferm.html"><input type="button" id="enferm" value="Illnesses"></a></li>          
-    </ul>
-  </div>
 </div>
 <div class="mainbar"><h3>Hi! How are you?</h3></div>
 <div class="hola1">
@@ -50,16 +55,14 @@ Una animacion de la persona que se meta, un perfil
     </div>
 
 <center>
-  <ul style="list-style-type: none; padding:0px;margin: 10px auto;" >  
-    <form>
-      <li><label for="desayuno"><h4>Breakfast</h4></label><input type="checkbox" id="desayuno" ></li>
-      <li><label for="mid"><h4>Mid</h4></label><input type="checkbox" id="mid" ></li>
-      <li><label for="almuerzo"><h4>Lunch</h4></label><input type="checkbox" id="almuerzo" ></li>
-      <li><label for="coffe"><h4>Coffe</h4></label><input type="checkbox" id="coffe" ></li>
-      <li><label for="cena"><h4>Dinner</h4></label><input type="checkbox" id="cena" ></li>
-      <div class="subwrap"><input type="submit" class="sub"></div>
-    </form>
-  </ul>
+ <dl id="checkboxes" style="display:inline-flex;">
+        <dd><label for="desayuno">Breakfast</label><input type="checkbox" id="desayuno" /></dd>
+        <dd><label for="mid">Mid</label><input type="checkbox" id="mid" /></dd>
+        <dd><label for="almuerzo">checkbox 3</label><input type="checkbox" id="almuerzo" /></dd>
+        <dd><label for="coffe">checkbox 4</label><input type="checkbox" id="coffe" /></dd>
+        <dd><label for="dinner">checkbox 4</label><input type="checkbox" id="dinner" /></dd>
+        <div class="subwrap"><input type="submit" class="sub"></div>
+  </dl>
 </center>
 </div>
 </div>

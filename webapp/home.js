@@ -1,43 +1,21 @@
 $(document).ready(function(){
-    $("#menu").click(function(){
-        $("#table").fadeToggle('slow');
-    });
-});
-      $(document).ready(function(){
-   $("#menu").click(function () {
-      $("body").each(function() {
-        over = $("body").css("overflow-y");
-        if(over == "hidden") {
-          $("#menu").fadeOut(function() {
-           $("body").css("overflow-y","auto");
-          });
-        } else  {
-          $("#menu").fadeIn(function() {
-            $("body").css("overflow-y","hidden")
-            ;
-          });
-        }
-      });
-    });
-  });
-    $(document).ready(function(){
-   $("#menu").click(function () {
-      $("#menu").each(function() {
-        menu = $("#menu").css("display");
-        if(menu == "auto") {
-          $("#menu").fadeOut('slow',function() {
-           $("#menu").css("display","auto");
+   $("#checkbox-toggle").click(function () {
+      $(".menu").each(function() {
+        menu = $(this).css("position");
+        if(menu == "absolute") {
+          $(this).fadeOut(function() {
+           $(this).css("position","fixed");
           });
         } else {
-          $("#menu").fadeIn('slow',function() {
-            $("#menu").css("display","auto")
+          $(this).fadeIn(function() {
+            $(this).css("position","absolute")
             ;
           });
         }
       });
     });
   });
-    $(document).ready(function(){
+$(document).ready(function(){
     $("#meals").click(function(){
         $(".wrap").slideToggle('slow');
     });
